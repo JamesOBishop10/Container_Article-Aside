@@ -1,0 +1,191 @@
+body {
+    /* Multiple backgrounds: gradient, pattern, image */
+    background:
+        linear-gradient(120deg, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.site-header {
+    background:
+        linear-gradient(120deg, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+    color: #1d3020;
+    font-style: italic;
+    padding: 0;
+    box-shadow: none;
+    margin: 0.5em 0;
+}
+
+/* Header paragraph exception */
+.site-header p,
+.header-paragraph {
+    box-shadow: none;
+    padding: 0;
+    margin: 0.5em 0;
+    font-style: italic;
+    color: #ddd;
+}
+
+
+/* Article & Aside paragraphs */
+article p,
+aside p {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+
+.article-header h1 {
+    padding: 1em;
+    margin-bottom: 0.2em;
+    color: #223;
+}
+
+
+.byline {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+
+
+main,
+nav,
+footer {
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 48px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(79, 123, 145);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    gap: 2em;
+}
+
+aside {
+    flex: 0 1 600px;
+    width: 22%;
+    background: none;
+    padding: 1em;
+}
+
+article {
+    flex: 0 1 900px;
+    background: none;
+    margin-bottom: 2em;
+    padding: 1em;
+
+}
+
+.image-gallery img {
+    display: block;
+    /* Stacks images vertically */
+    margin: 5px;
+    /* Adds space between images */
+    height: 80px;
+    /* Optional: Adjust image height */
+    width: auto;
+    /* Optional: Limit image size */
+}
+
+.image-gallery a:hover img {
+    box-shadow: 0 2px 12px rgba(30, 60, 90, 0.2);
+}
+
+footer {
+    background: radial-gradient(circle at center, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+    color: #fff;
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    font-size: 0.9em;
+    border-radius: none;
+    box-shadow: none;
+    position: relative;
+}
+
+
+/*
+footer {
+    background: radial-gradient(circle at center, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+    color: #fff;
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    font-size: 0.9em;
+    border-radius: none;
+    box-shadow: none;
+    position: relative;
+}
+*/
+
+/*.image-gallery {
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    
+
+.image-gallery img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    transition: box-shadow 0.2s;
+}
+*/
+
+/* p {
+    background: rgba(225, 220, 220, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.header-paragraph {
+    font-size: 0.9em;
+    color: #494db4;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+Semi-transparent containers for readability
+ url('pattern.svg') repeat,
+        url('Blu_BG_01.png') center/cover no-repeat;
+
+*/

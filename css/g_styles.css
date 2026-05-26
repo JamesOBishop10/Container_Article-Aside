@@ -1,0 +1,221 @@
+html,
+body
+
+/* Apply styles to both html and body elements. These are the designations applied to the root elements of the document. 
+All other elements are descendants of these roots. The designations help in setting global styles and layout foundations. 
+The elements are structured like a family tree, with html as the root and body as its child. */
+  {
+  height: 100%;
+  /* Why use height: 100%?
+  This ensures that the html and body elements take up the full height of the viewport, which is essential for 
+  flexbox layouts to work correctly. Why not use min-height: 100vh; (vh = viewport height) instead? 
+  Because height: 100% is relative to the parent element, which in this case is the viewport, ensuring consistent 
+  behavior across different browsers and scenarios. If height: 120% or height: 150% were used, the body would be 
+  taller than the viewport, causing unwanted scrolling. If height: 80% were used, the body would be shorter than 
+  the viewport, potentially leaving unwanted empty space. */
+
+  margin: 0;
+
+  /* Why use margin: 0?
+  This removes the default margin applied by browsers, ensuring that the body takes up the full viewport without 
+  any unwanted spacing around it. */
+
+  padding: 0;
+
+  /* Why use padding: 0? 
+  This removes the default padding applied by browsers, ensuring that the body takes up the full viewport without 
+  any unwanted spacing inside it. If padding: 0, 25, 10, 25; were used, it would add padding inside the body, 
+  which might not be desired. The effect on layout and design should be carefully considered, since the viewport 
+  displays content edge-to-edge and the pixel count is important for precise layout control. The most common units 
+  of measurement for padding are pixels (px), ems (em), and percentages (%). */
+
+  font-family: "Segoe UI", sans-serif;
+  /* Set a clean, modern font for the entire page; font-family specifies the typeface. 
+  Font is different from text in that it refers to the design of the characters, while text is the actual content displayed.
+  Next to be considered id whether to use the browser default font stack or a custom one. Font-weight controls the thickness 
+  of the characters. Units of measure most commonly used for font size and weight include pixels (px), ems (em), rems (rem), 
+  and percentages (%). */
+}
+
+body {
+  display: flex;
+  /* Enable flexbox layout. 
+  This allows for flexible and responsive design. Horizontal and vertical alignment become easier. */
+  flex-direction: column;
+  /* Arrange children (header, main, footer) in a column. This is useful for vertical layouts. 
+  Separation is achieved by flex properties; these allow the main content to expand and push the footer to the bottom.
+  To achieve this, the main content is given a flex-grow value, allowing it to take up available space. 
+  To acheive horizontal alignment, additional flex properties can be used: these flex properties include 
+  justify-content and align-items. 
+  To add justify-content, use justify-content: center; for example. To add align-items, use align-items: center; for example. */
+  min-height: 100vh;
+  /* Ensure the body takes at least the full viewport height. When the content is short, the footer stays at the bottom. */
+  background: linear-gradient(120deg, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+  /* Gradient background for visual appeal. This is achieved using a linear gradient with two color stops. 
+  The first color stop is a semi-transparent blue, and the second is a semi-transparent peach. 
+  These values create a smooth transition between the two colors; they can be changed to customize the look. */
+  /* Background properties can be adjusted for different effects. 
+  For example, to create a radial gradient instead of a linear one, use background: 
+  radial-gradient(circle at center, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5)); */
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1em 2em;
+  color: #fff;
+}
+
+.site-header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+
+
+.site-header a:hover,
+.site-header a.active {
+  color: #ffd296;
+}
+
+/* MAIN */
+.gallery-page {
+  flex: 1;
+  padding: 2em;
+  color: #fff;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+/* CARDS */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.03);
+}
+
+.gallery-card img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+
+.gallery-card figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  color: #fff;
+  padding: 1em;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover figcaption {
+  transform: translateY(0);
+}
+
+.gallery-card button {
+  background: rgba(255, 210, 150, 0.8);
+  border: none;
+  color: #222;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: background 0.3s ease;
+}
+
+.gallery-card button:hover {
+  background: rgba(45, 86, 136, 0.9);
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: radial-gradient(circle at center, rgba(45, 86, 136, 0.966), rgba(255, 210, 150, 0.5));
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  /* Padding inside the footer container for spacing in between the footer content and the edges of the container. */
+  font-size: 0.9em;
+}
+
+
+/* 'footer a' applies styles to all anchor (<a>) elements within the footer section of the webpage. */
+footer a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* 'footer a:hover' applies styles to all anchor (<a>) elements within the footer section when they are hovered over. */
+footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* 'footer ul' applies styles to all unordered list (<ul>) elements within the footer section of the webpage. */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+}
+
+
+
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+}
+
+
+footer li {
+  display: inline-block;
+  /* Display list <li> items inline for horizontal layout */
+  margin-right: 1rem;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}

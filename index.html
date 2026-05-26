@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add comments throughout the .html, .css and .js files - if included - to explain the function of each element, 
+     attribute, component etc.. in relation to each other.-->
+
+    <meta charset="UTF-8">
+    <!-- Character encoding for the document -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Ensures proper scaling on different devices -->
+
+    <title>The Second Act Tech Crew</title>
+
+    <meta name="description" content="A modern multi-device HTML5 boilerplate.">
+    <!-- Description of the website for search engines -->
+
+    <link rel="icon" href="Gallery/logo/favicon.ico" type="image/x-icon"><!-- Favicon for the website -->
+
+    <!-- Social & device meta tags -->
+
+    <meta property="og:title" content="My Modern Boilerplate"> <!-- Open Graph title for social media -->
+
+    <meta property="og:description" content="A modern multi-device HTML5 boilerplate.">
+
+    <!-- Open Graph description for social media -->
+
+    <meta property="og:type" content="website">
+
+    <!-- Open Graph type for social media -->
+
+    <meta property="og:image" content="logo.png">
+
+    <!-- Open Graph image for social media -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Twitter card type for social media -->
+
+    <meta name="msapplication-navbutton-color" content="#333">
+
+    <!-- Sets the color of the navigation bar in Windows Phone -->
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+
+    <!-- Sets the color of the status bar in iOS -->
+
+    <!--Sets the color of the status bar in iOS refers to the small meta tag used by iOS when a web page is launched from the Home Screen (installed as a web app). It does not let the browser display arbitrary hex colors — instead it selects one of a few predefined styles that change whether the status bar is the default style, opaque black, or translucent so page content can show beneath it. This behavior applies to standalone web apps (display: standalone) and is not guaranteed when the page is viewed inside Safari’s normal UI.
+
+Use cases and limitations: this meta setting is useful when creating a Progressive Web App or a home-screen shortcut and the top chrome needs to visually match the app design. It cannot set arbitrary colors and is ignored by regular desktop/mobile browsers; Apple only supports the fixed values, so make sure the page’s top area or background matches the chosen style if a consistent look is required.
+
+Best practice: combine the meta tag with a matching top-area background in CSS and with a web app manifest for broader PWA support on other platforms. Also test on real iOS devices and note that behavior can vary between iOS versions.
+
+Example: <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+
+    <link rel="stylesheet" href="css/my_style.css"> <!-- Link to external CSS stylesheet -->
+
+</head>
+
+<body>
+    <!-- Site Header with Navigation -->
+
+    <header class="site-header">
+
+        <nav> <!-- Main navigation container -->
+
+            <a href="/"><!-- Link to the homepage -->
+
+                <img src="logo\favicon.ico" class="logo"
+                    alt="Circular technology logo, a Yin and Yang symbol, showing two interlocking glowing blue orbs set within a dark metallic ring with circuit-like detailing; background gradient fades from warm orange on the left to cool blue on the right; conveys a futuristic, balanced, calm yet energetic tone">
+
+            </a>
+            <!-- "C:\Users\job19\Article-Aside\logo\favicon.ico"
+            "C:\Users\job19\Article-Aside_project\logo\logo-02.png"-->
+
+        </nav>
+
+        <p class="header-paragraph">This is the &lt;header&gt; element. It is nested within the &lt;body&gt;
+            element.<br>
+            The site logo and main navigation are nested within the &lt;header&gt; element.</p>
+        <!-- Description of the header element -->
+
+
+        <nav aria-label="Main"> <!-- Main navigation for the site -->
+            <ul>
+
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header><!-- End of site header -->
+
+    <main id="main"><!-- Main content area -->
+        <article aria-label="Main Content"><!-- Primary article content -->
+            <header class="article-header"><!-- Article header section -->
+                <h1>Welcome to My New Project <em>- This is the article header. This is inside of an &lt;h1&gt;
+                        &lt;/h1&gt; tag.</em>
+                </h1>
+                <p class="byline">By James Bishop | Sept 28, 2025</p><!-- Article byline with author and date -->
+            </header><!-- End of article header section -->
+            <p>This is the &lt;article&gt; element.</p>
+            <p>This is a simple, multi-device-ready HTML5 template with modern structure, navigation, multiple linkable
+                images, and a layered background effect.</p>
+            <section class="image-gallery" id="gallery">
+                <!-- Image gallery section. The <section> element contains multiple linkable images. -->
+                <a href="/Gallery/tags/article-tag.png"><img src="/Gallery/tags/article-tag.png"
+                        alt="Gallery Image 1"></a><!-- Linkable image 1 -->
+                <a href="/Gallery/tags/aside-tag.png"><img src="/Gallery/tags/aside-tag.png"
+                        alt="Gallery Image 2"></a><!-- Linkable image 2 -->
+
+                <!-- Linkable image 3. Need to limit the image size using CSS and add a "zoom-in" feature upon hover. 
+                 Also, consider adding alt text for accessibility, and captions. You can use the <figcaption> element for captions. 
+                    Below, I have provided a basic example of how to add captions using <figure> and <figcaption>. -->
+                <figure><!-- Figure element for image with caption. 
+                    What this does is group the image and its caption together for better semantic structure. -->
+                    <a href="/Gallery/tags/The-tags.png"><img src="/Gallery/tags/The-tags.png"
+                            alt="Gallery Image 3"></a>
+                    <figcaption>This is a caption for Gallery Image 3. The image shows the open and closed &lt;tag&gt;
+                        symbols which make up the &lt;tags&gt; used in HTML.</figcaption>
+                </figure>
+            </section><!-- End of image gallery section -->
+        </article>
+        <div class="spacer">
+            <!-- Spacer element to create visual separation. 
+            I need to add CSS styles to control the spacing and signify the separation using hover effects or border shadows. 
+            Ask for guidance if needed. VS Code is a helpful tool for editing and previewing HTML and CSS. -->
+            <p>This is a spacer element. It consists of &lt;p&gt; &lt;/p&gt; placed inside a &lt;div&gt; &lt;/div&gt;.
+                It is placed between the &lt;article&gt; and the &lt;aside&gt; containers.</p>
+            <p>Its purpose is to create visual separation and improve readability by adding space between these two
+                sections.</p>
+            <p>You can adjust the spacing by modifying the CSS styles associated with the
+                &lt;div&gt; or &lt;p&gt; elements.</p>
+            <p>There are other ways to create spacing, such as using CSS margin or padding
+                properties directly on the &lt;article&gt; or &lt;aside&gt; elements.</p>
+            <!-- There will be examples of different spacing techniques given below. -->
+            <!-- End of spacer description -->
+        </div>
+        <aside>
+            <nav aria-label="Sidebar">
+                <ul>
+                    <li><a href="#tips">Tips</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+            <p>This is the &lt;aside&gt; element. It is used for content that is related to the main content but
+                separate from it.</p>
+            <h2>Tips for Using This Boilerplate</h2>
+            <ul>
+                <li>Customize the CSS in your <code>style.css</code> file to match your branding.</li>
+                <li>Replace placeholder images with one from your own <code>img/</code> directory.</li>
+                <li>Add more sections or articles as needed for your content.</li>
+                <li>Ensure all links and references are updated to point to your resources.</li>
+            </ul>
+            </section>
+            <section id="resources">
+                <h2>Resources List</h2><!-- List of useful web development resources -->
+                <ul><!-- Unordered list of resource links. I need to alphabetize them. 
+                    How these tags and elements function are important for accessibility and structure. The <a href> element is used to create hyperlinks. 
+                        Also, the attributes of the <a> element, such as href, target, and rel, provide additional functionality and control over link behavior. -->
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Documentation</a></li>
+
+                    <li><a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds">CSS
+                            Multiple Backgrounds</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">CSS
+                            Media Queries</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position?v=example">CSS
+                            Positioning</a></li>
+                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Documentation</a></li>
+                    <li><a href="https://flexicodes.com/">FlexiCodes</a></li>
+
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+
+                    <li><a href="https://web.dev/learn/">Web Development Tutorials</a></li>
+                    <li><a href="https://www.w3.org/TR/WCAG21/">Web Accessibility Guidelines</a></li>
+                    <li><a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility Standards</a>
+                    </li>
+
+                    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+                    <li><a href="https://webaim.org/">WebAIM</a></li>
+
+                </ul>
+            </section><!-- End of resources section -->
+
+        </aside><!-- End of aside section -->
+
+    </main><!-- End of main content area -->
+    <!-- Include a Modern Boilerplate doctype and structure in the HTML document so the viewer has a consistent and accessible starting point. -->
+
+
+
+    <!-- Footer section with navigation and copyright information -->
+    <footer>
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="#main">Back to Top</a></li>
+                <!-- Link to the top of the page. 
+                When it works, it allows users to quickly navigate back to the main content. 
+                The correct way to write the link is <a href="#main">Back to Top</a> -->
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+
+            </ul>
+        </nav>
+        <small>&copy; 2025 My Modern Boilerplate | James Bishop II. All rights reserved. <a
+                href="mailto:job.1971@yahoo.com">Email</a>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
