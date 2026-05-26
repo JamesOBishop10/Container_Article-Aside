@@ -1,30 +1,31 @@
-* Aside & Article Container Demo
-This project is a small, yet scalable, HTML5 site that demonstrates how to use the `article` and `aside` containers in a modern page layout. It focuses on semantic structure, visual separation, and responsive-friendly markup.
+Container Article & Aside Demo
 
-## Project overview
+This project is a small HTML5 site that demonstrates how to use the `article` and `aside` containers in a modern page layout. It focuses on semantic structure, visual separation, and responsive-friendly markup.
+
+ Project overview
 
 The site includes multiple pages (`index.html`, `about.html`, `contact.html`, `gallery.html`) that share a consistent layout built around an `article` element for main content and an `aside` element for related or supplementary information.
 
 A spacer element, implemented as a `<div>` containing an empty `<p>`, sits between the `article` and `aside` sections to create visual separation and improve readability. This spacer is styled with CSS and can be adjusted or replaced with margin/padding utilities.
 
-## Key HTML containers
+Key HTML containers
 
-- **`<article>`**
+`<article>`
   - Represents the primary content of the page (such as an article, tutorial, or standalone content block).
   - Structured to be self-contained and meaningful on its own.
   - Uses headings, paragraphs, and images to show how content within `article` should be organized.
 
-- **`<aside>`**
+`<aside>`
   - Provides supporting or related content, such as notes, callouts, or additional explanations.
   - Positioned next to the `article` to illustrate how sidebars or secondary panels can be built.
   - Demonstrates how `aside` helps screen readers and search engines understand secondary content.
 
-- **Spacer between `article` and `aside`**
+Spacer between `article` and `aside`
   - Implemented as a `<div>` with a `<p>` inside to create vertical space between the main and side content.
   - Styled via CSS (for example, using margin or padding) to visually separate the two containers.
   - Highlights alternative approaches, such as applying margins directly on the `article` or `aside` elements.
 
-## CSS and layout
+CSS and layout
 
 The `css` directory contains stylesheets for the different pages:
 
@@ -33,14 +34,14 @@ The `css` directory contains stylesheets for the different pages:
 
 The layout is designed to be multi-device-ready, with a simple responsive structure that keeps the `article` and `aside` containers readable on both large and small screens.
 
-## Images and tags
+Images and tags
 
 - The `logo` directory contains the site logo, favicon, and related images.
 - The `tags` directory includes screenshots and diagrams that visually explain HTML elements, opening/closing tags, and the structure of article/aside sections.
 
 These assets support the educational goal of the project by showing how HTML containers and tags look in context.
 
-## How to run the project
+How to run the project
 
 1. Clone the repository:
    ```bash
@@ -50,7 +51,7 @@ These assets support the educational goal of the project by showing how HTML con
 2. Open `index.html` in your web browser (or use a simple local server).
 3. Navigate through the About, Contact, and Gallery pages to see how the `article` and `aside` containers are reused across the site.
 
-## Learning goals
+Learning goals
 
 This project is intended to help you:
 
@@ -59,15 +60,14 @@ This project is intended to help you:
 - Practice structuring a small multi-page site with consistent layout and reusable assets.
 - Get comfortable working with HTML5, CSS, and basic project organization.
 
-## Future improvements
+Future improvements
 
-Possible enhancements include: 
+Possible enhancements include:
 
-- Additonal pages built around demos for other containers.
 - Adding more examples of `article`/`aside` usage (blog posts, news items, side notes). ------- Maybe -----------
 - Improving responsive behavior with flexbox or grid layouts.
 - Expanding the documentation with more diagrams or code comments.
-
+```
 Questions to guide an effective README
 
 Project basics
@@ -107,10 +107,3 @@ Status and roadmap
 Credits and context
   - Did you use any references, tutorials, or design inspirations worth mentioning (without copying content)?
   - Is there any licensing information or attribution needed?
-
-
--   
-
-- Adding more examples of `article`/`aside` usage (blog posts, news items, side notes).
-- Improving responsive behavior with flexbox or grid layouts.
-- Expanding the documentation with more diagrams or code comments.
