@@ -1,4 +1,4 @@
-Container Article & Aside Demo
+# Container Article & Aside Demo
 
 This project is a small HTML5 site that demonstrates how to use the `article` and `aside` containers in a modern page layout. It focuses on semantic structure, visual separation, and responsive-friendly markup.
 
@@ -11,19 +11,22 @@ A spacer element, implemented as a `<div>` containing an empty `<p>`, sits betwe
 Key HTML containers
 
 `<article>`
-  - Represents the primary content of the page (such as an article, tutorial, or standalone content block).
-  - Structured to be self-contained and meaningful on its own.
-  - Uses headings, paragraphs, and images to show how content within `article` should be organized.
+
+- Represents the primary content of the page (such as an article, tutorial, or standalone content block).
+- Structured to be self-contained and meaningful on its own.
+- Uses headings, paragraphs, and images to show how content within `article` should be organized.
 
 `<aside>`
-  - Provides supporting or related content, such as notes, callouts, or additional explanations.
-  - Positioned next to the `article` to illustrate how sidebars or secondary panels can be built.
-  - Demonstrates how `aside` helps screen readers and search engines understand secondary content.
+
+- Provides supporting or related content, such as notes, callouts, or additional explanations.
+- Positioned next to the `article` to illustrate how sidebars or secondary panels can be built.
+- Demonstrates how `aside` helps screen readers and search engines understand secondary content.
 
 Spacer between `article` and `aside`
-  - Implemented as a `<div>` with a `<p>` inside to create vertical space between the main and side content.
-  - Styled via CSS (for example, using margin or padding) to visually separate the two containers.
-  - Highlights alternative approaches, such as applying margins directly on the `article` or `aside` elements.
+
+- Implemented as a `<div>` with a `<p>` inside to create vertical space between the main and side content.
+- Styled via CSS (for example, using margin or padding) to visually separate the two containers.
+- Highlights alternative approaches, such as applying margins directly on the `article` or `aside` elements.
 
 CSS and layout
 
@@ -44,10 +47,12 @@ These assets support the educational goal of the project by showing how HTML con
 How to run the project
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/JamesOBishop10/Container_Article-Aside.git
    cd Container_Article-Aside
    ```
+
 2. Open `index.html` in your web browser (or use a simple local server).
 3. Navigate through the About, Contact, and Gallery pages to see how the `article` and `aside` containers are reused across the site.
 
@@ -67,6 +72,7 @@ Possible enhancements include:
 - Adding more examples of `article`/`aside` usage (blog posts, news items, side notes). ------- Maybe -----------
 - Improving responsive behavior with flexbox or grid layouts.
 - Expanding the documentation with more diagrams or code comments.
+
 ```
 Questions to guide an effective README
 
