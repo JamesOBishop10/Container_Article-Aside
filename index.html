@@ -47,11 +47,17 @@
 
     <!-- Sets the color of the status bar in iOS -->
 
-    <!--Sets the color of the status bar in iOS refers to the small meta tag used by iOS when a web page is launched from the Home Screen (installed as a web app). It does not let the browser display arbitrary hex colors — instead it selects one of a few predefined styles that change whether the status bar is the default style, opaque black, or translucent so page content can show beneath it. This behavior applies to standalone web apps (display: standalone) and is not guaranteed when the page is viewed inside Safari’s normal UI.
+    <!--"Sets the color of the status bar in iOS" refers to the small meta tag used by iOS when a web page is launched from the Home Screen (installed as a web app). 
+    It does not let the browser display arbitrary hex colors — instead it selects one of a few predefined styles that change whether the status bar is the default 
+    style, opaque black, or translucent so page content can show beneath it. This behavior applies to standalone web apps (display: standalone) and is not guaranteed 
+    when the page is viewed inside Safari’s normal UI.
 
-Use cases and limitations: this meta setting is useful when creating a Progressive Web App or a home-screen shortcut and the top chrome needs to visually match the app design. It cannot set arbitrary colors and is ignored by regular desktop/mobile browsers; Apple only supports the fixed values, so make sure the page’s top area or background matches the chosen style if a consistent look is required.
+Use cases and limitations: this meta setting is useful when creating a Progressive Web App or a home-screen shortcut and the top chrome needs to visually match the 
+app design. It cannot set arbitrary colors and is ignored by regular desktop/mobile browsers; Apple only supports the fixed values, so make sure the page’s top area 
+or background matches the chosen style if a consistent look is required.
 
-Best practice: combine the meta tag with a matching top-area background in CSS and with a web app manifest for broader PWA support on other platforms. Also test on real iOS devices and note that behavior can vary between iOS versions.
+Best practice: combine the meta tag with a matching top-area background in CSS and with a web app manifest for broader PWA support on other platforms. Also test on 
+real iOS devices and note that behavior can vary between iOS versions.
 
 Example: <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
 
