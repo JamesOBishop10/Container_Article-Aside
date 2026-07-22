@@ -29,7 +29,8 @@ p {
     padding: 0;
     margin: 0.5em 0;
     font-style: italic;
-    color: #dddddd;
+    color: #002F5E;
+    /* Dark blue for header paragraphs */
 }
 
 
